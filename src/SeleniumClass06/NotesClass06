@@ -1,0 +1,53 @@
+Selenium Class 06
+
+
+Alerts:
+Alert is popup message. Alert takes a complete focus of our main page that we are working on.
+We can not proceed until it is clicked.
+
+3 types of Alert
+1-Web base alerts/HTML alerts-we can simply inspect and perform need action
+2- Javascript alerts /browser alerts- we can handle these alerts by using "switchTo" method
+                                       we cannot inspect.
+3- Windows based Alerts-  we "cannot" handle with Selenium.
+
+types of Java Scripts Alerts:
+1. Simple Alerts- click ok
+2. confirmation alerts - either cancel or click
+3. prompt alerts- enter the text and click ok
+
+To handle JS alerts we only have 4 methods:
+1. accept() - click Ok
+2. dismiss() - click cancel
+3. getText() -
+4. sendKeys()
+
+To handle authentication alrets we need to pass username & password in th URL
+http://username:password@URL
+
+
+Frames
+Frame is a separate independent window in our webpage
+Frames allow devs to represent multiple views on one page
+
+3 ways to interact with Frames:
+1. by index
+2. by name or ID
+3. by WebElement
+
+in alerts - switch to alert and switch automatically back
+in frames - switch to a frame manually and switch manually back to the main page
+
+Interview question:
+How do you handle Alerts in selenium?
+We handle Alerts by using Alert interface
+
+Task
+Navigate to https://syntaxprojects.com/bootstrap-iframe.php
+verify the header text Sorry, We Couldn't Find Anything For “Asksn” is displayed
+verify enroll today button is enabled
+
+HW
+Go to https://syntaxprojects.com/javascript-alert-box-demo.php
+click on each button and handle the alert accordingly
+
